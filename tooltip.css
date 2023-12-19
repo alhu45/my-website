@@ -1,0 +1,72 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 50px;
+    background-color: #726f6f;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -25px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+.tooltip .tooltipC {
+    visibility: hidden;
+    width: 50px;
+    background-color: #726f6f;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -30px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+.tooltip .tooltipHTML {
+    visibility: hidden;
+    width: 60px;
+    background-color: #726f6f;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -30px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+.tooltip .tooltipArduino {
+    visibility: hidden;
+    width: 120px;
+    background-color: #726f6f;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip:hover .tooltipC {
+    visibility: visible;
+}
+.tooltip:hover .tooltipHTML {
+    visibility: visible;
+}
+.tooltip:hover .tooltipArduino {
+    visibility: visible;
+}

@@ -1,0 +1,61 @@
+html, body {width: auto!important; overflow-x: hidden!important}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*body {
+    background: rgb(27, 27, 27);
+}*/
+
+p{
+    font-size: 15px;
+    padding: 15px;
+}
+h2 {
+    padding-left: 15px;
+    padding-bottom: 0px;
+}
+h3 {
+    padding-left: 15px;
+    font-size: 15px;
+}
+.container-experience {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+.experience-card {
+    background: #d9d2d2;
+    width: 300px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.experience-card:hover {
+    color: #565252;
+    transition: all 0.3s ease;
+    box-shadow: 5px 10px 3px;
+}
+.card-image {
+    background-color: #000000;
+    height: 180px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+
+.image-1 {
+    background-image: url("logo/vortex.png")
+}
+
+.image-2 {
+    background-image: url("logo/engsoc.png")
+}
+
+.image-3 {
+    background-image: url("logo/enactus.png");
+}
+
+.image-4 {
+    background-image: url("logo/iCon-Living.png");
+}
