@@ -1,0 +1,111 @@
+html, body {width: auto!important; overflow-x: hidden!important}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*body {
+    background: rgb(27, 27, 27);
+}*/
+
+p{
+    font-size: 15px;
+    padding: 15px;
+}
+h2 {
+    padding-left: 15px;
+    padding-bottom: 0px;
+}
+h3 {
+    padding-left: 15px;
+    font-size: 15px;
+}
+.container-experience {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.experience-card {
+    background: #d9d2d2;
+    width: 300px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.experience-card:hover {
+    color: #565252;
+    transition: all 0.3s ease;
+    box-shadow: 5px 10px 3px;
+}
+.card-image {
+    background-color: #000000;
+    height: 180px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+
+.image-1 {
+    background-image: url("logo/vortex.png")
+}
+
+.image-2 {
+    background-image: url("logo/engsoc.png")
+}
+
+.image-3 {
+    background-image: url("logo/enactus.png");
+}
+
+.image-4 {
+    background-image: url("logo/iCon-Living.png");
+}
+.typing-all {
+    font-size: 80px;
+    color: #000000;
+    text-align: center;
+    margin-top: 15px;
+}
+.animated-bio span {
+    position: relative;
+}
+.animated-bio span::before {
+    content: "Experience";
+    animation: words 20s infinite;
+}
+.animated-bio span::after {
+    content: " ";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #ffffff;
+    border-left: 2px solid white;
+    right: -8px;
+    animation: cursor 1s infinite, typing 30s steps(20) infinite;
+}
+@keyframes cursor {
+    to {
+        border-left: 2px solid rgb(0, 0, 0);
+    }
+}
+@keyframes words {
+    0%, 100% {
+        content: "Experience";
+    }
+}
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 8px);
+    }
+}
+@media screen and (max-width: 600px) {
+    .typing-all {
+        font-size: 60px;
+        color: #000000;
+        text-align: center;
+        margin-top: 15px;
+    }
+}
